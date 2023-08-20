@@ -5,9 +5,11 @@ import { Route, Routes } from "react-router-dom";
 
 // We import all the components we need in our app
 // import Navbar from "./components/navbar";
-// import RecordList from "./components/recordList";
+import IssueList from "./components/issueList";
 // import Edit from "./components/edit";
 import Create from "./components/create";
+import Admin from "./components/admin";
+
 
 const App = () => {
   return (
@@ -15,10 +17,11 @@ const App = () => {
       {/* <Navbar /> */}
       <div style={{ margin: 20 }}>
       <Routes>
-        {/* 
-        <Route exact path="/" element={<RecordList />} />
-        <Route path="/edit/:id" element={<Edit />} /> */ }
-        <Route exact path="/" element={<Create />} />
+        <Route exact path="/" element={<IssueList />} />
+        {/* <Route path="/edit/:id" element={<Edit />} /> */ }
+        <Route path="/create" element={<Create />} />
+        <Route path="/admin" element={<Admin />} />
+
       </Routes>
       </div>
     </div>

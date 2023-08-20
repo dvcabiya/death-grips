@@ -1,0 +1,13 @@
+.titleCell{
+  max-width: 10vw;
+  overflow-wrap: normal;
+  font-weight: bold;
+}
+.contentCell{
+  max-width: 15vw;
+  overflow-wrap: normal;
+}
+
+.dgFont {
+  font-family: 'IM Fell DW Pica', serif;
+}
