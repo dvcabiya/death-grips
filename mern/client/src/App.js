@@ -4,9 +4,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import IssueList from "./components/issueList";
-// import Edit from "./components/edit";
 import Create from "./components/create";
-// import Admin from "./components/admin";
+import About from "./components/about";
 import Home from "./components/home";
 
 
@@ -19,10 +18,8 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/issues" element={<IssueList />} />
-        {/* <Route path="/edit/:id" element={<Edit />} /> */ }
         <Route path="/create" element={<Create />} />
-        {/*<Route path="/admin" element={<Admin />} /> */}
-
+        <Route path="/about" element={<About />} />
       </Routes>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function Navbar() {
        <NavLink className="nav-link" to="/create">
             <h2 className="navbarFonts">Raise Issue</h2>
         </NavLink>
-        <a href="https://thirdworlds.net" ><img src={thirdWorlds} className="thirdWorldsLogo" alt="Third Worlds logo"></img></a>
+        <img src={thirdWorlds} className="thirdWorldsLogo" alt="Third Worlds logo"></img>
         <NavLink className="nav-link" to="/issues">
             <h2 className="navbarFonts">Present Issues</h2>
         </NavLink>

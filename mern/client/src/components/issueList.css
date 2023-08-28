@@ -1,13 +1,21 @@
-.titleCell{
-  max-width: 10vw;
-  overflow-wrap: normal;
-  font-weight: bold;
-}
-.contentCell{
-  max-width: 15vw;
-  overflow-wrap: normal;
+.table{
+  color: #ffffff;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
-.dgFont {
+.tableTitle{
   font-family: 'IM Fell DW Pica', serif;
+  color: white;
+  font-style: italic;
+  margin: 30px;
+}
+.titleCell{
+  max-width: 15vw;
+  overflow-wrap: normal;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.contentCell{
+  font-size: 2vh;
+  overflow-wrap: normal;
 }

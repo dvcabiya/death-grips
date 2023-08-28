@@ -6,16 +6,6 @@ const Issue = (props) => (
  <tr>
    <td className="titleCell">{props.issue.title}</td>
    <td className="contentCell">{props.issue.content}</td>
-   <td>
-     <Link className="btn btn-link" to={"/"}><b>Edit</b></Link> <b>—</b>
-     <button className="btn btn-link"
-       onClick={() => {
-         props.deleteIssue(props.issue._id);
-       }}
-     >
-       <b>Delete</b>
-     </button>
-   </td>
  </tr>
 );
 
@@ -42,23 +32,13 @@ export default function IssueList() {
    return;
  }, [issues.length]);
 
- // This method will delete a record
- async function deleteIssue(id) {
-   await fetch(`http://localhost:5050/issues/${id}`, {
-     method: "DELETE"
-   });
 
-   const newIssues = issues.filter((el) => el._id !== id);
-   setIssues(newIssues);
- }
 
- // This method will map out the records on the table
  function issueList() {
    return issues.map((issue) => {
      return (
        <Issue
          issue={issue}
-         deleteIssue={() => deleteIssue(issue._id)}
          key={issue._id}
        />
      );
@@ -67,13 +47,13 @@ export default function IssueList() {
 
  // This following section will display the table with the records of individuals.
  return (
-   <div className="dgFont">
-     <h3>Open Issues</h3>
-     <table className="table table-striped" style={{ marginTop: 20 }}>
+   <div>
+     <h1 className="tableTitle">Open Issues - {issues.length}</h1>
+     <table className="table table-striped">
        <thead>
          <tr>
-           <th>Subject</th>
-           <th>Body</th>
+           <th><h2>Subject</h2></th>
+           <th><h2>Body</h2></th>
            <th></th>
          </tr>
        </thead>

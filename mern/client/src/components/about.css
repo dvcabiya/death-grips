@@ -1,0 +1,38 @@
+.aboutBox{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-family: 'IM Fell DW Pica', serif;
+  color: white;
+}
+.paraContainer{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+.rightPara{
+  max-width: 50vw;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'IM Fell DW Pica', serif;
+  color: white;
+  font-size: large;
+}
+.leftPara{
+  align-self: flex-end;
+  max-width: 50vw;
+  margin-right: 5vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'IM Fell DW Pica', serif;
+  color: white;
+  font-size: large;
+  text-align: right;
+}

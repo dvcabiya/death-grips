@@ -66,9 +66,9 @@ function writeOut(){
 if (status.bool === true){
   return(
     <div className="infoText">
-      <h2>Yes, Death Grips is online.</h2>
-      <h2>Substantiated by the fact that <a href={status.source} target="_blank" rel="noreferrer">{`${status.reason}`}</a></h2>
-      <h2>Raise an issue if the status is outdated.</h2>
+      <div>Yes, Death Grips is online.</div>
+      <div>Substantiated by the fact that <a href={status.source} target="_blank" rel="noreferrer">{`${status.reason}`}</a></div>
+      <div><a href="/create">Raise an issue</a> if the status is outdated.</div>
     </div>
   )
 }

@@ -56,7 +56,7 @@ export default function Create() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="content">Details</label>
+         <label htmlFor="content">Details (include source)</label>
          <textarea 
           className="form-control" 
           id="content" 
