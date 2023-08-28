@@ -8,6 +8,8 @@
   - React
   - Node + Express
 - MongoDB
+- CSS
+- A little HTML
 
 Hosting is yet to be resolved. Let me know if the site is accessible but I've forgotten to update this.
 
