@@ -1,0 +1,58 @@
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  transition: opacity 1s, visibility 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader::after {
+  content: "";
+  max-height: 60px;
+}
+.loader--hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+.answerBox{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.answerImage{
+  width: 100vw;
+}
+.infoBox{
+  width: 100vw;
+  height: 100vh;
+  max-height: 600px;
+  margin-top: 0;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'IM Fell DW Pica', serif;
+  text-align: center;
+}
+.infoText{
+  margin: 30px;
+}
+
+a{
+  color: red;
+}
+a:hover {
+  color: darkred;
+}
+body{
+  background: black;
+}

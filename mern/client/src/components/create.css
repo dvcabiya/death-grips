@@ -1,0 +1,31 @@
+.bodyStyle{
+  background: black;
+  font-family: 'IM Fell DW Pica', serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 94vh;
+}
+label{
+  font-size: 2em;
+}
+.btn{
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 1.2em;
+  background: red;
+  border: 3px solid crimson;
+}
+.btn:hover{
+  background: darkred;
+  border: 3px solid crimson;
+  border-radius: 2px;
+}
+.header{
+  font-size: 3em;
+  font-style: italic;
+  margin-top: 5vh;
+}
+.form-control{
+width: 40vw;  
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import "./create.css"
 
 export default function Create() {
  const [form, setForm] = useState({
@@ -40,8 +41,8 @@ export default function Create() {
 
  // This following section will display the form that takes the input from the user.
  return (
-   <div>
-     <h3>Create New Record</h3>
+   <div className="bodyStyle">
+     <h1 className="header">Raise New Issue</h1>
      <form onSubmit={onSubmit}>
        <div className="form-group">
          <label htmlFor="title">Title</label>
@@ -50,23 +51,24 @@ export default function Create() {
            className="form-control"
            id="title"
            value={form.title}
+           rows="3"
            onChange={(e) => updateForm({ title: e.target.value })}
          />
        </div>
        <div className="form-group">
-         <label htmlFor="content">Details about group's activity</label>
-         <input
-           type="text"
-           className="form-control"
-           id="position"
-           value={form.position}
-           onChange={(e) => updateForm({ content: e.target.value })}
-         />
+         <label htmlFor="content">Details</label>
+         <textarea 
+          className="form-control" 
+          id="content" 
+          rows="5"
+          value={form.content}
+          onChange={(e) => updateForm({ content: e.target.value })}>
+         </textarea>
        </div>
        <div className="form-group">
          <input
            type="submit"
-           value="Create person"
+           value="Submit"
            className="btn btn-primary"
          />
        </div>

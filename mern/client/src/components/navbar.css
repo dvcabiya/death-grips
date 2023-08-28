@@ -1,0 +1,14 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.navbarFonts{
+  font-family: 'IM Fell DW Pica', serif;
+  color: black;
+}
+.thirdWorldsLogo{
+  max-height: 60px;
+  bottom: 5px;
+}
