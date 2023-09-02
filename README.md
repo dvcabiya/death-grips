@@ -11,8 +11,6 @@
 - CSS
 - A little HTML
 
-Hosting is yet to be resolved. Let me know if the site is accessible but I've forgotten to update this.
-
 ### About
 
 This tracker gives an instant answer to the aforementioned question upon accessing the webpage, but also allows you to raise an issue if you believe the posted status to be incorrect, which will be reviewed and changed accordingly as soon as possible.
