@@ -4,7 +4,7 @@ import "./loadEnvironment.mjs";
 import issues from "./routes/issues.mjs";
 import admin from "./routes/admin.mjs"
 
-const PORT = 5050;
+const PORT = process.env.PORT || 5050;
 const app = express();
 
 app.use(cors());
